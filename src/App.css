@@ -309,6 +309,8 @@ div {
 .footer {
   background-color:#c9dbc0;
   margin-top: 60px;
+  max-width: 100vw;
+
 }
 
 .footer-wrapper {
