@@ -1,7 +1,67 @@
 .notes-img {
-    margin-top: 50px;
+    margin-top:50px;
     width: 300px;
     display: inline-block;
     vertical-align: middle;
 }
 
+.card-work {
+    align-items:center;
+    border: none;
+    background-color: #edbe3a;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+.card-work-2 {
+    align-items:center;
+    border: none;
+    background-color: red;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+.card__image {
+    align-items: center;
+    width: 600px;
+    padding-top: 30px;
+}
+
+.card__title {
+    
+}
+.card__subtitle {
+    padding: 10px;
+}
+
+.card__text {
+    max-width: 500px;
+    padding: 10px;
+}
+
+.card__button {
+    background-color: #c9dbc0;
+    border-color: #c9dbc0;
+    width:300px;
+    margin-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .card__button {
+        width:100%;
+        
+    }
+    .card__image {
+        align-items: center;
+        max-width: 100vw;
+        padding: 50px 0 20px 0
+
+    }
+    
+  }
+  
+  
+  
+  

@@ -39,21 +39,27 @@ const MyWork = () => (
         className="ml-auto" 
         navbar>
           <NavItem>
-          <NavLink exact to="/"
+          <NavLink 
+          className="margin-right nav-color"
+          exact to="/"
           activeStyle={{
             fontWeight: 'bold',
             color: 'white'
            }}
            >
            About</NavLink>
-          <NavLink exact to="/work"
+          <NavLink 
+          className="margin-right nav-color"
+          exact to="/work"
           activeStyle={{
             fontWeight: 'bold',
             color: 'white'
            }}
            >
            Work</NavLink>
-           <NavLink exact to="/notes"
+           <NavLink 
+           className="nav-color"
+           exact to="/notes"
            activeStyle={{
              fontWeight: 'bold',
              color: 'white'
@@ -78,16 +84,29 @@ const MyWork = () => (
 
            
     <div>
-    <Card>
-      <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
+    <Card className="card-work">
+      <CardImg className="card__image" top src="https://image.ibb.co/iAoHoK/cryptos_nugoo.png" alt="Card image cap" />
       <CardBody>
-        <CardTitle>Card title</CardTitle>
-        <CardSubtitle>Card subtitle</CardSubtitle>
-        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-        <Button>Button</Button>
+        <CardTitle className="card__title">Cryptocurrency Tracker</CardTitle>
+        <CardSubtitle className="card__subtitle">Realtime Market Information</CardSubtitle>
+        <CardText className="card__text">This is a mock-up of coinmarketcap.com and uses their API to fetch real-time market data. This is still a work in progress!</CardText>
+        <a href="http://salty-cove-93789.herokuapp.com/" target="_blank"><Button className="card__button">View Demo</Button></a>
       </CardBody>
     </Card>
     </div>
+
+    <div>
+    <Card className="card-work-2">
+      <CardImg className="card__image" top src="https://image.ibb.co/iAoHoK/cryptos_nugoo.png" alt="Card image cap" />
+      <CardBody>
+        <CardTitle className="card__title">Cryptocurrency Tracker</CardTitle>
+        <CardSubtitle className="card__subtitle">Realtime Market Information</CardSubtitle>
+        <CardText className="card__text">This is a mock-up of coinmarketcap.com and uses their API to fetch real-time market data. This is still a work in progress!</CardText>
+        <a href="https://expensify-app-nugoo.herokuapp.com/" target="_blank"><Button className="card__button">View Demo</Button></a>
+      </CardBody>
+    </Card>
+    </div>
+
 
 
   

@@ -103,6 +103,15 @@ div {
   height: 500px;       
 }
 
+.margin-right {
+  margin-right: 15px;
+}
+
+.nav-color {
+  color: #79a897;
+  text-decoration: none;
+}
+
 .name-img {
   margin-top: 50px;
   width: 450px;
@@ -371,6 +380,12 @@ div {
   .footer-container {
     max-width: 250px;
   }
+
+  .notes-img {
+    margin-top:0;
+}
+
+
 
 }
 

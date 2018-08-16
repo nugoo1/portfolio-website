@@ -54,21 +54,27 @@ class App extends Component {
                 className="ml-auto"
                 navbar>
                 <NavItem>
-                  <NavLink exact to="/"
+                  <NavLink 
+                    className="margin-right nav-color"
+                    exact to="/"
                     activeStyle={{
                       fontWeight: 'bold',
                       color: 'white'
                     }}
                   >
                     About</NavLink>
-                  <NavLink exact to="/work"
+                  <NavLink
+                    className="margin-right nav-color"
+                    exact to="/work"
                     activeStyle={{
                       fontWeight: 'bold',
                       color: 'white'
                     }}
                   >
                     Work</NavLink>
-                    <NavLink exact to="/notes"
+                    <NavLink 
+                    className="nav-color"
+                    exact to="/notes"
                     activeStyle={{
                       fontWeight: 'bold',
                       color: 'white'
