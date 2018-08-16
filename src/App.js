@@ -107,7 +107,7 @@ class App extends Component {
                 <Col>
                 <Col className="flex-it">
                 <Media className="container flex-it bg-stripe">
-                  <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png"/>
+                  <Media object className="body-logo-img" src="https://image.ibb.co/jGD9Y9/logo_dev.png"/>
                 
                 <div className="bubble-tag">
                   <div className="bubble right">
@@ -136,14 +136,16 @@ class App extends Component {
 
                 <Container className="media-box">
                 <Row>
+
                 <Col>
                 <Col className="flex-it">
+
                 <Media className="container flex-it bg-stripe">
-                <div className="bubble-tag">
+                  <div className="bubble-tag">
                   <div className="bubble2 right">
-                </div>
-                <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png"/>
-                </div>	
+                  </div>
+                  </div>
+                  <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png"/>
                 </Media>
                   
               </Col>
@@ -168,27 +170,50 @@ class App extends Component {
                 </div>
 
 
-                <h3 className="section-title"> Need my help? </h3>    
-                <h4 className="content-title">I'm available for freelance work</h4>
-                  <p className="subtitle">If you need a website developed, I'm your guy!</p>
+                <h2 className="message-title"> Need my help? </h2>    
+                <h4 className=" message-subtitle">I'm available for freelance work</h4>
+                  <p className="subtitle">If you need some help with designing and developing your website, hire me!</p>
+                  
+                  
                   <div className="button-container">
+                  <a className="message-link" href="mailto:nuwan_g@live.com">
                   <Button
+                    className="button-color"
                     tag="a"
                     color="success"
                     size="large"
-                    href="https://expensify-app-nugoo.herokuapp.com"
                     target="_blank"
                     >
                         SEND MESSAGE
                     </Button>
-    
- 
+                    </a>
                   </div>
-                  
+                                         
                 </div>
 
 
-              </div>       
+              </div> 
+
+              <Row className="footer">
+                <Row className="footer-wrapper"> 
+                  <Container className="footer-container">
+                  <Col xs="6">
+                    <h4 className="footer-link">Github</h4>
+                    <h4 className="footer-link">LinkedIn</h4>
+                  </Col>
+                  <Col xs="6">
+                    <h4 className="footer-link">Behance</h4>
+                  </Col>
+                  </Container>  
+                </Row>
+                <Row className="copyright-wrapper">
+                  <Container>
+                    <p className="copyright">© 2018 Nugoo. All rights reserved.</p>   
+                  </Container>
+                </Row>
+    
+              </Row>
+
             </div>
         );
     }

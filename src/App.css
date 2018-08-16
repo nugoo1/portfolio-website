@@ -59,6 +59,10 @@ div {
   text-align: center;
 }
 
+.button-color {
+  background-color: #d9b031;
+  border-color: #d9b031;
+}
 
 .logo-img {
   height: 60px;
@@ -159,6 +163,24 @@ div {
   margin-bottom: 30px;
 }
 
+.message-title {
+  font-size: 1.8rem;
+  color: #79a897;
+  text-align: center;
+}
+.message-subtitle {
+  font-size: 1.3rem;
+  color: #79a897;
+  padding: 8px 0;
+  text-align: center;
+}
+
+.message-link {
+  color: #f7f7f7;
+  text-decoration: none;
+  margin: none;
+}
+
 .subtitle {
   text-align: center;
 }
@@ -171,21 +193,13 @@ div {
   margin-bottom: 30px;
 }
 
-
 .left {
-  text-align: left
+  text-align: center
 }
-
-.right {
-  text-align: right
-}
-
-
 
 .media-box {
   margin-top: 20px;
 }
-
 
 .flex-it {
   display: flex;
@@ -203,15 +217,14 @@ div {
 
 .bubble {
     animation-name: bubble-vert;
-    -webkit-animation-duration: 10s;
+    -webkit-animation-duration: 20s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
     -webkit-animation-name: bubble-vert;
     -moz-animation-name: bubble-vert;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1,0,0,1);
-
     background-image: url("https://image.ibb.co/cBKJap/what_do.jpg");
     background-size: 77px 231px;
     width: 77px;
@@ -224,15 +237,15 @@ div {
 
 .bubble2 {
   animation-name: bubble-vert;
-  -webkit-animation-duration: 10s;
+  -webkit-animation-duration: 20s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: cubic-bezier(1,0,0,1);
   -webkit-animation-name: bubble-vert;
   -moz-animation-name: bubble-vert;
-  animation-duration: 10s;
+  animation-duration: 20s;
+  animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1,0,0,1);
-
   background-image: url("https://image.ibb.co/hUtVMU/web_dev.jpg");
   background-size: 77px 231px;
   width: 77px;
@@ -263,6 +276,46 @@ div {
   height: 90px;
 }
 
+.footer {
+  background-color:#c9dbc0;
+  margin-top: 60px;
+}
+
+.footer-wrapper {
+  height: 150px;
+  width: 100%;
+}
+
+.copyright-wrapper {
+  width: 100%;
+}
+
+.footer-container {
+  align-items: flex-start;
+  margin-top: 70px;
+  text-align: center;
+  width: 60%;
+}
+
+.footer-link {
+  color: #79a897;
+  font-size: 1.1rem; 
+}
+
+.footer-link--left{
+  text-align: left; 
+}
+
+.footer-link--right{
+  text-align: right; 
+}
+
+.copyright {
+  color: #79a897;
+  font-size: .8rem;
+  margin-top: 20px;
+  text-align: center;
+}
 
 @media only screen and (max-width: 600px) {
   .name-img {
@@ -280,8 +333,6 @@ div {
     margin: 7px 40px;
     text-align: center;
   }
-
-  
 
   .subtitle {
     margin: 0 40px;
