@@ -1,222 +1,233 @@
 import React, { Component } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import {
-    Card, 
-    CardImg, 
-    CardText, 
-    CardBody,
-    CardTitle,
-    CardSubtitle,
-    Media,
-    Container,
-    Row,
-    Col,
-    Button,
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Media,
+  Container,
+  Row,
+  Col,
+  Button,
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  Nav,
+  NavItem,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem
 } from 'reactstrap';
 
 class App extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.toggle = this.toggle.bind(this);
-        this.state = {
-            isOpen: false
-        };
-    }
-    toggle() {
-        this.setState({
-            isOpen: !this.state.isOpen
-        });
-    }
-    render() {
-        return (
-            <div>
-              <div className="banner">
-              <Navbar 
-              color="faded" light
-              expand="md"
-              className="navbar-dark navbar-expand-sm content-container"
-              >
-              <div className="header__content">
-              <a class="navbar-brand" href="#">
-              <img alt="Brand" className="brand" src="https://image.ibb.co/jvvQ5p/logo.png"/>
-              </a>
-                  <Nav 
-                  className="ml-auto" 
-                  navbar>
-                    <NavItem>
-                    <a href="http://www.github.com/nugoo1">
-                    <p className="header__link">GitHub</p>
-                    </a>
-                    </NavItem>
-                  </Nav>
-              </div>    
-              </Navbar>                  
-              <h2>
-              <figure class="transistion">
-                <Media className="container">
-                  <Media object className="name-img" src="https://image.ibb.co/nr9zgU/nuwan.png"/>
-                </Media>			
-                <Media className="container">
-                  <Media object className="web-dev-img" src="https://image.ibb.co/f8eeWU/web_dev.png"/>
-                </Media>								
-              </figure>
-              </h2>
-              </div>
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  }
+  render() {
+    return (
+      <div>
+        <div className="banner">
+          <Navbar
+            color="faded" light
+            expand="md"
+            className="navbar-dark navbar-expand-sm content-container"
+          >
+            <div className="header__content">
+              <Link to="/" >
+                <img alt="Brand" className="brand" src="https://image.ibb.co/jvvQ5p/logo.png" />
+              </Link>
+              <Nav
+                className="ml-auto"
+                navbar>
+                <NavItem>
+                  <NavLink exact to="/"
+                    activeStyle={{
+                      fontWeight: 'bold',
+                      color: 'white'
+                    }}
+                  >
+                    About</NavLink>
+                  <NavLink exact to="/work"
+                    activeStyle={{
+                      fontWeight: 'bold',
+                      color: 'white'
+                    }}
+                  >
+                    Work</NavLink>
+                    <NavLink exact to="/notes"
+                    activeStyle={{
+                      fontWeight: 'bold',
+                      color: 'white'
+                     }}
+                     >
+                     Notes</NavLink>
 
-              <div className="body-section">
-                
-              <div className="content-container">
-                
-                <h2>
-                <figure class="transistion">
-                  <Media className="container">
-                    <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png"/>
-                  </Media>						
-                </figure>
-                </h2>
-
-                <h3 className="section-title"> Hello </h3>
-                  <p className="subtitle">Welcome to my portfolio website. I'm a web designer / developer living in Colombo, Sri Lanka.
-                  My passion is in technology and trying to learn all the little things that makes the world go round!
-                  Right now, I'm working towards becoming a full stack developer.</p>
-                </div>
-
-                <div class="breaker">
-		              <Container className="bg-stripe">
-		              	<Row>	
-				            	<div className="line"></div>			
-		              	</Row>
-	              	</Container>
-	              </div>
-            
-
-                <div className="content-container">
-                <h2 className="section-title"> What Can I Do? </h2>
-                <Container className="media-box">
-                <Row>
-                <Col>
-                <Col className="flex-it">
-                <Media className="container flex-it bg-stripe">
-                  <Media object className="body-logo-img" src="https://image.ibb.co/jGD9Y9/logo_dev.png"/>
-                
-                <div className="bubble-tag">
-                  <div className="bubble right">
-                  </div>
-                </div>	
-                </Media>
-                  
-              </Col>
-              <Col>	
-                <h3 className="content-title left">Design what you want.</h3>
-                <p className="left">I like keeping my designs simple. Most of the time, I look for inspiration from other designers and developers.</p>
-              </Col> 
-                
-                </Col>
-                   
-                </Row>
-                </Container>
-
-                <div class="breaker">
-                <Container className="bg-stripe">
-                  <Row>	
-                    <div className="line"></div>			
-                  </Row>
-                </Container>
-                </div>
-
-                <Container className="media-box">
-                <Row>
-
-                <Col>
-                <Col className="flex-it">
-
-                <Media className="container flex-it bg-stripe">
-                  <div className="bubble-tag">
-                  <div className="bubble2 right">
-                  </div>
-                  </div>
-                  <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png"/>
-                </Media>
-                  
-              </Col>
-              <Col>	
-                <h3 className="content-title left">Develop what you need.</h3>
-                <p className="left">I like keeping my designs simple. Most of the time, I look for inspiration from other pros
-                in the scene.</p>
-              </Col> 
-                
-                </Col>
-                   
-                </Row>
-                </Container>
-
-                
-                <div class="breaker">
-                <Container className="bg-stripe">
-                  <Row>	
-                    <div className="line"></div>			
-                  </Row>
-                </Container>
-                </div>
-
-
-                <h2 className="message-title"> Need my help? </h2>    
-                <h4 className=" message-subtitle">I'm available for freelance work</h4>
-                  <p className="subtitle">If you need some help with designing and developing your website, hire me!</p>
-                  
-                  
-                  <div className="button-container">
-                  <a className="message-link" href="mailto:nuwan_g@live.com">
-                  <Button
-                    className="button-color"
-                    tag="a"
-                    color="success"
-                    size="large"
-                    target="_blank"
-                    >
-                        SEND MESSAGE
-                    </Button>
-                    </a>
-                  </div>
-                                         
-                </div>
-
-
-              </div> 
-
-              <Row className="footer">
-                <Row className="footer-wrapper"> 
-                  <Container className="footer-container">
-                  <Col xs="6">
-                    <h4 className="footer-link">Github</h4>
-                    <h4 className="footer-link">LinkedIn</h4>
-                  </Col>
-                  <Col xs="6">
-                    <h4 className="footer-link">Behance</h4>
-                  </Col>
-                  </Container>  
-                </Row>
-                <Row className="copyright-wrapper">
-                  <Container>
-                    <p className="copyright">© 2018 Nugoo. All rights reserved.</p>   
-                  </Container>
-                </Row>
-    
-              </Row>
-
+                </NavItem>
+              </Nav>
             </div>
-        );
-    }
+          </Navbar>
+          <h2>
+            <figure className="transistion">
+              <Media className="container">
+                <Media object className="name-img" src="https://image.ibb.co/nr9zgU/nuwan.png" />
+              </Media>
+              <Media className="container">
+                <Media object className="web-dev-img" src="https://image.ibb.co/f8eeWU/web_dev.png" />
+              </Media>
+            </figure>
+          </h2>
+        </div>
+
+        <div className="body-section">
+
+          <div className="content-container">
+
+            <h2>
+              <figure className="transistion">
+                <Media className="container">
+                  <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png" />
+                </Media>
+              </figure>
+            </h2>
+
+            <h3 className="section-title"> Hello </h3>
+            <p className="subtitle">Welcome to my portfolio website. I'm a web designer / developer living in Colombo, Sri Lanka.
+            My passion is in technology and trying to learn all the little things that makes the world go round!
+                  Right now, I'm working towards becoming a full stack developer.</p>
+          </div>
+
+          <div className="breaker">
+            <Container className="bg-stripe width-set">
+              <Row>
+                <div className="line"></div>
+              </Row>
+            </Container>
+          </div>
+
+
+          <div className="content-container">
+            <h2 className="section-title"> What Can I Do? </h2>
+            <Container className="media-box">
+              <Row>
+                <Col>
+                  <Col className="flex-it">
+                    <Media className="container flex-it bg-stripe width-max">
+                      <Media object className="body-logo-img" src="https://image.ibb.co/hxQ6Vp/logo_dev.png" />
+
+                      <div className="bubble-tag">
+                        <div className="bubble right">
+                        </div>
+                      </div>
+                    </Media>
+
+                  </Col>
+                  <Col>
+                    <h3 className="content-title left">Design what you want.</h3>
+                    <p className="left">I like keeping my designs simple. Most of the time, I look for inspiration from other designers and developers.</p>
+                  </Col>
+
+                </Col>
+
+              </Row>
+            </Container>
+
+
+            <Container className="media-box">
+              <Row>
+
+                <Col className="add-margin">
+                  <Col className="flex-it">
+
+                    <Media className="container flex-it bg-stripe width-max">
+                      <div className="bubble-tag">
+                        <div className="bubble2 right">
+                        </div>
+                      </div>
+                      <Media object className="body-logo-img" src="https://image.ibb.co/dDzx39/logo_dev_2.png" />
+                    </Media>
+
+                  </Col>
+                  <Col>
+                    <h3 className="content-title left">Develop what you need.</h3>
+                    <p className="left">I like keeping my designs simple. Most of the time, I look for inspiration from other pros
+                in the scene.</p>
+                  </Col>
+
+                </Col>
+
+              </Row>
+            </Container>
+
+
+            <div className="breaker">
+              <Container className="bg-stripe width-set">
+                <Row>
+                  <div className="line"></div>
+                </Row>
+              </Container>
+            </div>
+
+
+            <h2 className="message-title"> Need my help? </h2>
+            <h4 className=" message-subtitle">I'm available for freelance work</h4>
+            <p className="subtitle">If you need some help with designing and developing your website, hire me!</p>
+
+
+            <div className="button-container">
+              <a className="message-link" href="mailto:nuwan_g@live.com">
+                <Button
+                  className="button-color"
+                  color="success"
+                  size="large"
+                  target="_blank"
+                >
+                  SEND MESSAGE
+                    </Button>
+              </a>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <Row className="footer">
+          <Row className="footer-wrapper">
+            <Container className="footer-container">
+              <Col xs="6">
+                <a href="http://www.github.com/nugoo1" target="_blank"><h4 className="footer-link">Github</h4></a>
+                <a href="https://www.linkedin.com/in/nuwan-goonewardena-6146a549/" target="_blank"><h4 className="footer-link">Linkedin</h4></a>
+              </Col>
+              <Col xs="6">
+              <a href="https://www.behance.net/nuwan_gec8b" target="_blank"><h4 className="footer-link right">Behance</h4></a>
+              </Col>
+            </Container>
+          </Row>
+          <Row className="copyright-wrapper">
+            <Container>
+              <p className="copyright">© 2018 Nugoo. All rights reserved.</p>
+            </Container>
+          </Row>
+
+        </Row>
+
+      </div>
+    );
+  }
 }
 
 export default App;
