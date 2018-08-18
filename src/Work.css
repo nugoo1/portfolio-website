@@ -13,3 +13,9 @@
   .add-some-margin {
     margin: 50px 0;
   }
+
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }

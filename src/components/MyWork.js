@@ -80,10 +80,10 @@ const MyWork = () => (
     </div>
 
     <div className="body-section remove-margin">
-
+    <div className="container">
     <div className="content-container add-some-margin">
-    <div className="section-title">
-    <h2>I'll be adding the rest of my work soon... As soon as I get back from a much needed vacation!</h2>
+
+    <h2 className="section-title">I'll be adding the rest of my work soon... As soon as I get back from a much needed vacation!</h2>
     <h2  className="add-some-margin">
               <figure className="transistion">
                 <Media className="container">
@@ -91,7 +91,7 @@ const MyWork = () => (
                 </Media>
               </figure>
             </h2>
-    </div>
+      </div>
     </div>
 
            

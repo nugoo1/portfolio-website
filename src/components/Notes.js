@@ -23,7 +23,6 @@ import {
     DropdownItem
 } from 'reactstrap';
 
-import Disqus from './Disqus';
 
 const MyWork = () => (
     <div>
