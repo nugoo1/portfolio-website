@@ -86,7 +86,7 @@ const MyWork = () => (
     <h2 className="section-title">I'll be adding the rest of my work soon... As soon as I get back from a much needed vacation!</h2>
     <h2  className="add-some-margin">
               <figure className="transistion">
-                <Media className="container">
+                <Media className="container2">
                   <Media object className="body-logo-img" src="https://image.ibb.co/dDzx39/logo_dev_2.png" class="body-logo-img media-object" />
                 </Media>
               </figure>
