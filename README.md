@@ -1,6 +1,9 @@
 # My Portfolio Website
 Inspired by Sean Halpin (seanhalpin.io)
 
+![alt text](https://salty-spire-79634.herokuapp.com/share.png)
+
+
 ## Tools Used
 This project was made using react, more specifically the react-create-app module.
 
