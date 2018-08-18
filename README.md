@@ -7,7 +7,9 @@ This project was made using react, more specifically the react-create-app module
 
 ## npm
 `npm init react-app my-app`
+
 `cd my app`
+
 `yarn start`
 
 
