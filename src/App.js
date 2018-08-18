@@ -155,7 +155,7 @@ class App extends Component {
             <Container className="media-box">
               <Row>
 
-                <Col className="add-margin">
+                <Col>
                   <Col className="flex-it">
 
                     <Media className="container flex-it bg-stripe width-max">

@@ -79,8 +79,20 @@ const MyWork = () => (
     </h2>
     </div>
 
-    <div className="body-section">
-      
+    <div className="body-section remove-margin">
+
+    <div className="content-container add-some-margin">
+    <div className="section-title">
+    <h2>I'll be adding the rest of my work soon... As soon as I get back from a much needed vacation!</h2>
+    <h2  className="add-some-margin">
+              <figure className="transistion">
+                <Media className="container">
+                  <Media object className="body-logo-img" src="https://image.ibb.co/dDzx39/logo_dev_2.png" class="body-logo-img media-object" />
+                </Media>
+              </figure>
+            </h2>
+    </div>
+    </div>
 
            
     <div>
@@ -93,19 +105,9 @@ const MyWork = () => (
         <a href="http://salty-cove-93789.herokuapp.com/" target="_blank"><Button className="card__button">View Demo</Button></a>
       </CardBody>
     </Card>
-    </div>
+    </div>  
 
-    <div>
-    <Card className="card-work-2">
-      <CardImg className="card__image" top src="https://image.ibb.co/iAoHoK/cryptos_nugoo.png" alt="Card image cap" />
-      <CardBody>
-        <CardTitle className="card__title">Cryptocurrency Tracker</CardTitle>
-        <CardSubtitle className="card__subtitle">Realtime Market Information</CardSubtitle>
-        <CardText className="card__text">This is a mock-up of coinmarketcap.com and uses their API to fetch real-time market data. This is still a work in progress!</CardText>
-        <a href="https://expensify-app-nugoo.herokuapp.com/" target="_blank"><Button className="card__button">View Demo</Button></a>
-      </CardBody>
-    </Card>
-    </div>
+            
 
 
 
@@ -114,7 +116,7 @@ const MyWork = () => (
 
     </div> 
 
-    <Row className="footer">
+    <Row className="footer remove-margin">
       <Row className="footer-wrapper"> 
         <Container className="footer-container">
         <Col xs="6">

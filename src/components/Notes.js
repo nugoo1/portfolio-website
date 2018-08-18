@@ -23,6 +23,8 @@ import {
     DropdownItem
 } from 'reactstrap';
 
+import Disqus from './Disqus';
+
 const MyWork = () => (
     <div>
     <div className="banner2">
@@ -80,23 +82,40 @@ const MyWork = () => (
     </div>
 
     <div className="body-section">
+
+    <div className="content-container">
+
+      <h2>
+        <figure className="transistion">
+          <Media className="container">
+            <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png" />
+          </Media>
+        </figure>
+      </h2>
+
+      <h3 className="section-title"> Hi Again </h3>
+      <p className="subtitle">This website was inspired by one of my favourite web designers - Sean Halpin. I love his use of 
+      SVG images, CSS animation and artwork to create beautiful UI. I tried to recreate his design using React.js and 
+      Reactstrap (Bootstrap for React). </p>
+
+      <p className="subtitle">This is still an ongoing project so come back soon to se the finished product.</p>
       
 
-           
-    <div>
-    <Card>
-      <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-      <CardBody>
-        <CardTitle>Card title</CardTitle>
-        <CardSubtitle>Card subtitle</CardSubtitle>
-        <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-        <Button>Button</Button>
-      </CardBody>
-    </Card>
+    </div>
+
+    <div className="breaker">
+      <Container className="bg-stripe width-set">
+        <Row>
+          <div className="line"></div>
+        </Row>
+      </Container>
     </div>
 
 
-  
+
+
+      
+
 
 
     </div> 
@@ -112,6 +131,8 @@ const MyWork = () => (
           <h4 className="footer-link right">Behance</h4>
         </Col>
         </Container>  
+
+        
       </Row>
       <Row className="copyright-wrapper">
         <Container>
