@@ -1,140 +1,95 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
 import {
-    Card, 
-    CardImg, 
-    CardText, 
-    CardBody,
-    CardTitle,
-    CardSubtitle,
-    Media,
-    Container,
-    Row,
-    Col,
-    Button,
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    Nav,
-    NavItem,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Media,
+  Button
 } from 'reactstrap';
+import { Navigation } from './Navigation';
+import { Footer } from './Footer';
 
 const MyWork = () => (
-    <div>
+  <div>
     <div className="banner2">
-    <Navbar 
-    color="faded" light
-    expand="md"
-    className="navbar-dark navbar-expand-sm content-container"
-    >
-    <div className="header__content">
-    <Link to="/" >
-    <img alt="Brand" className="brand" src="https://image.ibb.co/jvvQ5p/logo.png"/>
-    </Link>
-        <Nav 
-        className="ml-auto" 
-        navbar>
-          <NavItem>
-          <NavLink 
-          className="margin-right nav-color"
-          exact to="/"
-          activeStyle={{
-            fontWeight: 'bold',
-            color: 'white'
-           }}
-           >
-           About</NavLink>
-          <NavLink 
-          className="margin-right nav-color"
-          exact to="/work"
-          activeStyle={{
-            fontWeight: 'bold',
-            color: 'white'
-           }}
-           >
-           Work</NavLink>
-           <NavLink 
-           className="nav-color"
-           exact to="/notes"
-           activeStyle={{
-             fontWeight: 'bold',
-             color: 'white'
-            }}
-            >
-            Notes</NavLink>
-          </NavItem>
-        </Nav>
-    </div>    
-    </Navbar>                  
-    <h2>
-    <figure class="transistion">
-      <Media className="container">
-        <Media object className="work-img" src="https://image.ibb.co/b3Bit9/my_work.png"/>
-      </Media>										
-    </figure>
-    </h2>
+      <Navigation />
+      <h2>
+        <figure class="transistion">
+          <Media className="container">
+            <Media object className="work-img" src="https://image.ibb.co/b3Bit9/my_work.png" />
+          </Media>
+        </figure>
+      </h2>
     </div>
 
     <div className="body-section remove-margin">
-    <div className="container">
-    <div className="content-container add-some-margin">
-
-    <h2 className="section-title">I'll be adding the rest of my work soon... As soon as I get back from a much needed vacation!</h2>
-    <h2  className="add-some-margin">
-              <figure className="transistion">
-                <Media className="container2">
-                  <Media object className="body-logo-img" src="https://image.ibb.co/dDzx39/logo_dev_2.png" class="body-logo-img media-object" />
-                </Media>
-              </figure>
-            </h2>
+      <div className="container">
+        <div className="content-container add-some-margin">
+          <h2 className="add-some-margin">
+            <figure className="transistion">
+              <Media className="container2">
+                <Media object className="my-work-img" src="https://image.ibb.co/dDzx39/logo_dev_2.png" />
+              </Media>
+            </figure>
+          </h2>
+          <h3 className="section-title-work"> Welcome</h3>
+        <p className="subtitle">You'll find some of the recent work I've done below. Be patient with the demos as they're hosted on free heroku servers!</p>
+        </div>
       </div>
+
+      <div>
+        <Card className="card-work">
+          <CardImg className="card__image" top src="https://image.ibb.co/iAoHoK/cryptos_nugoo.png" alt="Crypto Tracker" />
+          <CardBody>
+            <CardTitle className="card__title">Cryptocurrency Tracker</CardTitle>
+            <CardSubtitle className="card__subtitle">Realtime Market Information</CardSubtitle>
+            <CardText className="card__text">This is a mock-up of coinmarketcap.com and uses their API to fetch real-time market data. This is still a work in progress!</CardText>
+            <a href="http://salty-cove-93789.herokuapp.com/" target="_blank"><Button className="card__button">View Demo</Button></a>
+          </CardBody>
+        </Card>
+      </div>
+      
+      <div>
+        <Card className="card-work-2">
+          <CardImg className="card__image" top src="https://image.ibb.co/i0WbXp/expensify_nugoo.png" alt="Expensify App" />
+          <CardBody>
+            <CardTitle className="card__title">Expensify Application</CardTitle>
+            <CardSubtitle className="card__subtitle">Firebase Realtime Database</CardSubtitle>
+            <CardText className="card__text">Login with your Facebook, Google or Github account and track all your expenses through this budget app.</CardText>
+            <a href="https://expensify-app-nugoo.herokuapp.com/" target="_blank"><Button className="card__button-2">View Demo</Button></a>
+          </CardBody>
+        </Card>
+      </div>
+
+      <div>
+        <Card className="card-work-3">
+          <CardImg className="card__image" top src="https://image.ibb.co/nQTvQ9/sarradem_nugoo.png" alt="Corporate Website" />
+          <CardBody>
+            <CardTitle className="card__title">Corporate Website</CardTitle>
+            <CardSubtitle className="card__subtitle">Old School Bootstrap & Javascript</CardSubtitle>
+            <CardText className="card__text">I made this for using HTML, CSS and Javascript (some JQuery too).</CardText>
+            <a href="http://www.sarradem.com/" target="_blank"><Button className="card__button-3">View Demo</Button></a>
+          </CardBody>
+        </Card>
+      </div>
+
+      <div>
+      <Card className="card-work-4">
+        <CardImg className="card__image" top src="https://image.ibb.co/eSkj2p/marina_nugoo.png" alt="Corporate Website" />
+        <CardBody>
+          <CardTitle className="card__title">Marketing Campaign</CardTitle>
+          <CardSubtitle className="card__subtitle">Art Direction & Coordination</CardSubtitle>
+          <CardText className="card__text">This is something I'm quite proud of.. Some of these photos ended up on the back cover of the Serendib Magazine (Sri Lankan Airlines).</CardText>
+          <a href="https://www.behance.net/gallery/69189333/Casino-Marina-Magazine-Ad" target="_blank"><Button className="card__button-4">View on Behance</Button></a>
+        </CardBody>
+      </Card>
+    </div>
     </div>
 
-           
-    <div>
-    <Card className="card-work">
-      <CardImg className="card__image" top src="https://image.ibb.co/iAoHoK/cryptos_nugoo.png" alt="Card image cap" />
-      <CardBody>
-        <CardTitle className="card__title">Cryptocurrency Tracker</CardTitle>
-        <CardSubtitle className="card__subtitle">Realtime Market Information</CardSubtitle>
-        <CardText className="card__text">This is a mock-up of coinmarketcap.com and uses their API to fetch real-time market data. This is still a work in progress!</CardText>
-        <a href="http://salty-cove-93789.herokuapp.com/" target="_blank"><Button className="card__button">View Demo</Button></a>
-      </CardBody>
-    </Card>
-    </div>  
-
-            
-
-
-
-  
-
-
-    </div> 
-
-    <Row className="footer remove-margin">
-      <Row className="footer-wrapper"> 
-        <Container className="footer-container">
-        <Col xs="6">
-          <h4 className="footer-link">Github</h4>
-          <h4 className="footer-link">LinkedIn</h4>
-        </Col>
-        <Col xs="6">
-          <h4 className="footer-link right">Behance</h4>
-        </Col>
-        </Container>  
-      </Row>
-      <Row className="copyright-wrapper">
-        <Container>
-          <p className="copyright">© 2018 Nugoo. All rights reserved.</p>   
-        </Container>
-      </Row>
-
-    </Row>
+    <Footer />
 
   </div>
 );

@@ -11,11 +11,21 @@
   }
 
   .add-some-margin {
-    margin: 50px 0;
+    margin: 40px 0;
   }
+
+  .add-some-margin-2 {
+    margin-top: 20px;
+}
 
   .container2 {
     align-items: center;
     display: flex;
     justify-content: center;
+  }
+  
+  .section-title-work {
+    color: #79a897;
+    text-align: center;
+    margin-bottom: 30px;
   }

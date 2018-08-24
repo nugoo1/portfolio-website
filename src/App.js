@@ -1,27 +1,14 @@
 import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import { Navigation } from './components/Navigation'
 import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
   Media,
   Container,
   Row,
   Col,
-  Button,
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  Nav,
-  NavItem,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  Button
 } from 'reactstrap';
+import { Footer } from './components/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -41,51 +28,7 @@ class App extends Component {
     return (
       <div>
         <div className="banner">
-          <Navbar
-            color="faded" light
-            expand="md"
-            className="navbar-dark navbar-expand-sm content-container"
-          >
-            <div className="header__content">
-              <Link to="/" >
-                <img alt="Brand" className="brand" src="https://image.ibb.co/jvvQ5p/logo.png" />
-              </Link>
-              <Nav
-                className="ml-auto"
-                navbar>
-                <NavItem>
-                  <NavLink 
-                    className="margin-right nav-color"
-                    exact to="/"
-                    activeStyle={{
-                      fontWeight: 'bold',
-                      color: 'white'
-                    }}
-                  >
-                    About</NavLink>
-                  <NavLink
-                    className="margin-right nav-color"
-                    exact to="/work"
-                    activeStyle={{
-                      fontWeight: 'bold',
-                      color: 'white'
-                    }}
-                  >
-                    Work</NavLink>
-                    <NavLink 
-                    className="nav-color"
-                    exact to="/notes"
-                    activeStyle={{
-                      fontWeight: 'bold',
-                      color: 'white'
-                     }}
-                     >
-                     Notes</NavLink>
-
-                </NavItem>
-              </Nav>
-            </div>
-          </Navbar>
+          <Navigation />
           <h2>
             <figure className="transistion">
               <Media className="container">
@@ -169,8 +112,7 @@ class App extends Component {
                   </Col>
                   <Col>
                     <h3 className="content-title left">Develop what you need.</h3>
-                    <p className="left">I like keeping my designs simple. Most of the time, I look for inspiration from other pros
-                in the scene.</p>
+                    <p className="left">I'm in the process of becoming a full stack developer. I'm focusing on React.Js, React Native & Node.Js</p>
                   </Col>
 
                 </Col>
@@ -211,25 +153,7 @@ class App extends Component {
 
         </div>
 
-        <Row className="footer">
-          <Row className="footer-wrapper">
-            <Container className="footer-container">
-              <Col xs="6">
-                <a href="http://www.github.com/nugoo1" target="_blank"><h4 className="footer-link">Github</h4></a>
-                <a href="https://www.linkedin.com/in/nuwan-goonewardena-6146a549/" target="_blank"><h4 className="footer-link">Linkedin</h4></a>
-              </Col>
-              <Col xs="6">
-              <a href="https://www.behance.net/nuwan_gec8b" target="_blank"><h4 className="footer-link right">Behance</h4></a>
-              </Col>
-            </Container>
-          </Row>
-          <Row className="copyright-wrapper">
-            <Container>
-              <p className="copyright">© 2018 Nugoo. All rights reserved.</p>
-            </Container>
-          </Row>
-
-        </Row>
+        <Footer />
 
       </div>
     );

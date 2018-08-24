@@ -387,7 +387,9 @@ div {
     margin-top:0;
 }
 
-
+.banner {
+  background-position-x: 88%;
+}
 
 }
 
