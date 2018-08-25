@@ -11,6 +11,8 @@ export const Footer = () => (
                 </Col>
                 <Col xs="6">
                     <a href="https://www.behance.net/nuwan_gec8b" target="_blank"><h4 className="footer-link right">Behance</h4></a>
+                    <a href="https://www.youtube.com/channel/UC0t8LfpySG8g6EuGKczVpvg" target="_blank"><h4 className="footer-link right">Youtube</h4></a>
+                    
                 </Col>
             </Container>
         </Row>
