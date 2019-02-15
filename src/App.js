@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
 import { Navigation } from './components/Navigation'
 import {
   Media,

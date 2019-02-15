@@ -42,12 +42,12 @@ const MyWork = () => (
 
       <div>
         <Card className="card-work">
-          <CardImg className="card__image" top src="https://image.ibb.co/iAoHoK/cryptos_nugoo.png" alt="Crypto Tracker" />
+          <CardImg className="card__image" top src="https://i.ibb.co/VJC0hy4/seee.jpg" alt="Crypto Tracker" />
           <CardBody>
-            <CardTitle className="card__title">Cryptocurrency Tracker</CardTitle>
-            <CardSubtitle className="card__subtitle">Realtime Market Information</CardSubtitle>
-            <CardText className="card__text">This is a mock-up of coinmarketcap.com and uses their API to fetch real-time market data. This is still a work in progress!</CardText>
-            <a href="http://salty-cove-93789.herokuapp.com/" target="_blank"><Button className="card__button">View Demo</Button></a>
+            <CardTitle className="card__title">Casino Website</CardTitle>
+            <CardSubtitle className="card__subtitle">New Macau Casino</CardSubtitle>
+            <CardText className="card__text">This website is built with React.js and Gatsby, which makes it optimized straight outta the box!</CardText>
+            <a href="https://newmacaucasino.com/" target="blank"><Button className="card__button">View Demo</Button></a>
           </CardBody>
         </Card>
       </div>
@@ -59,7 +59,7 @@ const MyWork = () => (
             <CardTitle className="card__title">Expensify Application</CardTitle>
             <CardSubtitle className="card__subtitle">Firebase Realtime Database</CardSubtitle>
             <CardText className="card__text">Login with your Facebook, Google or Github account and track all your expenses through this budget app.</CardText>
-            <a href="https://expensify-app-nugoo.herokuapp.com/" target="_blank"><Button className="card__button-2">View Demo</Button></a>
+            <a href="https://expensify-app-nugoo.herokuapp.com/" target="blank"><Button className="card__button-2">View Demo</Button></a>
           </CardBody>
         </Card>
       </div>
@@ -71,7 +71,7 @@ const MyWork = () => (
             <CardTitle className="card__title">Corporate Website</CardTitle>
             <CardSubtitle className="card__subtitle">Old School Bootstrap & Javascript</CardSubtitle>
             <CardText className="card__text">I made this for using HTML, CSS and Javascript (some JQuery too).</CardText>
-            <a href="http://www.sarradem.com/" target="_blank"><Button className="card__button-3">View Demo</Button></a>
+            <a href="http://www.sarradem.com/" target="blank"><Button className="card__button-3">View Demo</Button></a>
           </CardBody>
         </Card>
       </div>
@@ -83,7 +83,7 @@ const MyWork = () => (
           <CardTitle className="card__title">Marketing Campaign</CardTitle>
           <CardSubtitle className="card__subtitle">Art Direction & Coordination</CardSubtitle>
           <CardText className="card__text">This is something I'm quite proud of.. Some of these photos ended up on the back cover of the Serendib Magazine (Sri Lankan Airlines).</CardText>
-          <a href="https://www.behance.net/gallery/69189333/Casino-Marina-Magazine-Ad" target="_blank"><Button className="card__button-4">View on Behance</Button></a>
+          <a href="https://www.behance.net/gallery/69189333/Casino-Marina-Magazine-Ad" target="blank"><Button className="card__button-4">View on Behance</Button></a>
         </CardBody>
       </Card>
     </div>

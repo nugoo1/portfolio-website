@@ -1,5 +1,5 @@
 import React from 'react';
-import { Media, Container, Row, Col } from 'reactstrap';
+import { Media, Container, Row } from 'reactstrap';
 import { Navigation } from './Navigation'
 import { Footer } from './Footer';
 import { Comments } from './Comments';
