@@ -4,6 +4,8 @@ import { Navigation } from './Navigation'
 import { Footer } from './Footer';
 import { Comments } from './Comments';
 
+import notesImage from "../images/notes-img.png";
+import bodyImage from "../images/body-img.png";
 
 const MyWork = () => (
   <div>
@@ -12,7 +14,7 @@ const MyWork = () => (
       <h2>
         <figure class="transistion">
           <Media className="container">
-            <Media object className="notes-img" src="https://image.ibb.co/fb8XLp/notes.png" />
+            <Media object className="notes-img" src={notesImage} />
           </Media>
         </figure>
       </h2>
@@ -22,7 +24,7 @@ const MyWork = () => (
         <h2>
           <figure className="transistion">
             <Media className="container">
-              <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png" />
+              <Media object className="body-logo-img" src={bodyImage} />
             </Media>
           </figure>
         </h2>

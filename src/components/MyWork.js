@@ -12,6 +12,14 @@ import {
 import { Navigation } from './Navigation';
 import { Footer } from './Footer';
 
+import workImage from "../images/work-img.png";
+import workJuggle from "../images/work-juggle.png";
+import newMacauImage from "../images/macau.jpg";
+import expensifyImage from "../images/expensify-img.png";
+import sarrademImage from "../images/sarradem-img.png";
+import marinaImage from "../images/marina-img.png";
+
+
 const MyWork = () => (
   <div>
     <div className="banner2">
@@ -19,7 +27,7 @@ const MyWork = () => (
       <h2>
         <figure class="transistion">
           <Media className="container">
-            <Media object className="work-img" src="https://image.ibb.co/b3Bit9/my_work.png" />
+            <Media object className="work-img" src={workImage} />
           </Media>
         </figure>
       </h2>
@@ -31,7 +39,7 @@ const MyWork = () => (
           <h2 className="add-some-margin">
             <figure className="transistion">
               <Media className="container2">
-                <Media object className="my-work-img" src="https://image.ibb.co/dDzx39/logo_dev_2.png" />
+                <Media object className="my-work-img" src={workJuggle} />
               </Media>
             </figure>
           </h2>
@@ -42,7 +50,7 @@ const MyWork = () => (
 
       <div>
         <Card className="card-work">
-          <CardImg className="card__image" top src="https://i.ibb.co/VJC0hy4/seee.jpg" alt="Crypto Tracker" />
+          <CardImg className="card__image" top src={newMacauImage} alt="New Macau Casino" />
           <CardBody>
             <CardTitle className="card__title">Casino Website</CardTitle>
             <CardSubtitle className="card__subtitle">New Macau Casino</CardSubtitle>
@@ -54,7 +62,7 @@ const MyWork = () => (
       
       <div>
         <Card className="card-work-2">
-          <CardImg className="card__image" top src="https://image.ibb.co/i0WbXp/expensify_nugoo.png" alt="Expensify App" />
+          <CardImg className="card__image" top src={expensifyImage} alt="Expensify App" />
           <CardBody>
             <CardTitle className="card__title">Expensify Application</CardTitle>
             <CardSubtitle className="card__subtitle">Firebase Realtime Database</CardSubtitle>
@@ -66,7 +74,7 @@ const MyWork = () => (
 
       <div>
         <Card className="card-work-3">
-          <CardImg className="card__image" top src="https://image.ibb.co/nQTvQ9/sarradem_nugoo.png" alt="Corporate Website" />
+          <CardImg className="card__image" top src={sarrademImage} alt="Corporate Website" />
           <CardBody>
             <CardTitle className="card__title">Corporate Website</CardTitle>
             <CardSubtitle className="card__subtitle">Old School Bootstrap & Javascript</CardSubtitle>
@@ -78,7 +86,7 @@ const MyWork = () => (
 
       <div>
       <Card className="card-work-4">
-        <CardImg className="card__image" top src="https://image.ibb.co/eSkj2p/marina_nugoo.png" alt="Corporate Website" />
+        <CardImg className="card__image" top src={marinaImage} alt="Corporate Website" />
         <CardBody>
           <CardTitle className="card__title">Marketing Campaign</CardTitle>
           <CardSubtitle className="card__subtitle">Art Direction & Coordination</CardSubtitle>

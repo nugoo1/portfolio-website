@@ -96,7 +96,7 @@ div {
 }
 
 .banner {
-  background-image:  url('https://image.ibb.co/hgtcmU/work_bg.jpg');
+  background-image:  url('./images/background.jpg');
   background-repeat: no-repeat;        
   position: relative;        
   width: 100%;            
@@ -244,7 +244,7 @@ div {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: cubic-bezier(1,0,0,1);
-    background-image: url("https://image.ibb.co/cBKJap/what_do.jpg");
+    background-image: url("./images/design.jpg");
     background-size: 77px 231px;
     width: 77px;
     height: 77px;
@@ -265,7 +265,7 @@ div {
   animation-delay: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(1,0,0,1);
-  background-image: url("https://image.ibb.co/hUtVMU/web_dev.jpg");
+  background-image: url("./images/dev.jpg");
   background-size: 77px 231px;
   width: 77px;
   height: 77px;
@@ -288,7 +288,7 @@ div {
 }
 
 .bg-stripe {
-    background-image: url(https://image.ibb.co/mLbWd9/stripe.jpg);
+    background-image: url(./images/stripe.jpg);
     background-size: 3px auto;
     background-position: center center;
     background-repeat: repeat-x;

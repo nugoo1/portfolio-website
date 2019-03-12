@@ -9,6 +9,12 @@ import {
 } from 'reactstrap';
 import { Footer } from './components/Footer';
 
+import nameImage from "./images/name-img.png";
+import webDevImage from "./images/web-dev.png";
+import bodyImage from "./images/body-img.png";
+import bodyCompImage from "./images/body-comp.png";
+import bodyJuggleImage from "./images/body-juggle.png";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -31,10 +37,10 @@ class App extends Component {
           <h2>
             <figure className="transistion">
               <Media className="container">
-                <Media object className="name-img" src="https://image.ibb.co/nr9zgU/nuwan.png" />
+                <Media object className="name-img" src={nameImage} />
               </Media>
               <Media className="container">
-                <Media object className="web-dev-img" src="https://image.ibb.co/f8eeWU/web_dev.png" />
+                <Media object className="web-dev-img" src={webDevImage} />
               </Media>
             </figure>
           </h2>
@@ -47,7 +53,7 @@ class App extends Component {
             <h2>
               <figure className="transistion">
                 <Media className="container">
-                  <Media object className="body-logo-img" src="https://image.ibb.co/jvvQ5p/logo.png" />
+                  <Media object className="body-logo-img" src={bodyImage} />
                 </Media>
               </figure>
             </h2>
@@ -74,7 +80,7 @@ class App extends Component {
                 <Col>
                   <Col className="flex-it">
                     <Media className="container flex-it bg-stripe width-max">
-                      <Media object className="body-logo-img" src="https://image.ibb.co/hxQ6Vp/logo_dev.png" />
+                      <Media object className="body-logo-img" src={bodyCompImage} />
 
                       <div className="bubble-tag">
                         <div className="bubble right">
@@ -105,13 +111,13 @@ class App extends Component {
                         <div className="bubble2 right">
                         </div>
                       </div>
-                      <Media object className="body-logo-img" src="https://image.ibb.co/dDzx39/logo_dev_2.png" />
+                      <Media object className="body-logo-img" src={bodyJuggleImage} />
                     </Media>
 
                   </Col>
                   <Col>
                     <h3 className="content-title left">Develop what you need.</h3>
-                    <p className="left">I'm in the process of becoming a full stack developer. I'm focusing on React.Js, React Native & Node.Js</p>
+                    <p className="left">I'm a full stack developer on the MERN stack. I'm focusing on React.Js, React Native & Node.Js for my applications as they modern, blazing fast and has a huge supporting community.</p>
                   </Col>
 
                 </Col>
