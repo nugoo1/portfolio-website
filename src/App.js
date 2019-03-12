@@ -117,7 +117,7 @@ class App extends Component {
                   </Col>
                   <Col>
                     <h3 className="content-title left">Develop what you need.</h3>
-                    <p className="left">I'm a full stack developer on the MERN stack. I'm focusing on React.Js, React Native & Node.Js for my applications as they modern, blazing fast and has a huge supporting community.</p>
+                    <p className="left">I'm a full stack developer on the MERN stack. I'm focusing on React.Js, React Native & Node.Js for my applications as they modern, blazing fast and have huge supporting communities.</p>
                   </Col>
 
                 </Col>
