@@ -18,6 +18,8 @@ import newMacauImage from "../images/macau.jpg";
 import expensifyImage from "../images/expensify-img.png";
 import sarrademImage from "../images/sarradem-img.png";
 import marinaImage from "../images/marina-img.png";
+import remoteDevs from "../images/remote_devs.JPG";
+
 
 
 const MyWork = () => (
@@ -46,6 +48,18 @@ const MyWork = () => (
           <h3 className="section-title-work"> Welcome</h3>
         <p className="subtitle">You'll find some of the recent work I've done below. Be patient with the demos as they're hosted on free heroku servers!</p>
         </div>
+      </div>
+
+      <div>
+        <Card className="card-work-5">
+          <CardImg className="card__image" top src={remoteDevs} alt="Remote Devs" />
+          <CardBody>
+            <CardTitle className="card__title">Hobby Project</CardTitle>
+            <CardSubtitle className="card__subtitle">Remote Devs</CardSubtitle>
+            <CardText className="card__text">This is a web application I started building with React.js, let me know what you think!</CardText>
+            <a href="https://trusting-easley-126adb.netlify.com/" target="blank"><Button className="card__button-2">View Demo</Button></a>
+          </CardBody>
+        </Card>
       </div>
 
       <div>

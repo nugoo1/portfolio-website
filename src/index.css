@@ -8,3 +8,7 @@ body {
 p {
 font-family: 'Quicksand','Muli', sans-serif;
 }
+
+a:hover {
+  color: #60a9a2;
+}

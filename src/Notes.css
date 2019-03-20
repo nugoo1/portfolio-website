@@ -37,6 +37,15 @@
     text-align: center;
 }
 
+.card-work-5 {
+    align-items:center;
+    border: none;
+    background-color: #6B9FDB;
+    color: #f7f7f7;
+    text-align: center;
+}
+
+
 
 .card__image {
     align-items: center;

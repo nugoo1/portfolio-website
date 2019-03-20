@@ -2,6 +2,8 @@ import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem } from 'reactstrap';
 
+import logo from "../images/logo.png";
+
 export const Navigation = () => (
     <Navbar
         color="faded" light
@@ -10,7 +12,7 @@ export const Navigation = () => (
     >
         <div className="header__content">
             <Link to="/" >
-                <img alt="Brand" className="brand" src="https://image.ibb.co/jvvQ5p/logo.png" />
+                <img alt="Brand" className="brand" src={logo} />
             </Link>
             <Nav
                 className="ml-auto"
@@ -21,7 +23,7 @@ export const Navigation = () => (
                         exact to="/"
                         activeStyle={{
                             fontWeight: 'bold',
-                            color: 'white'
+                            color: '#60a9a2'
                         }}
                     >
                         About</NavLink>
@@ -30,7 +32,7 @@ export const Navigation = () => (
                         exact to="/work"
                         activeStyle={{
                             fontWeight: 'bold',
-                            color: 'white'
+                            color: '#60a9a2'
                         }}
                     >
                         Work</NavLink>
@@ -39,7 +41,7 @@ export const Navigation = () => (
                         exact to="/notes"
                         activeStyle={{
                             fontWeight: 'bold',
-                            color: 'white'
+                            color: '#60a9a2'
                         }}
                     >
                         Notes</NavLink>
