@@ -1,5 +1,7 @@
+
+
 .banner2 {
-    background-image:  url('https://image.ibb.co/fwFORU/bg_other.jpg');
+    background-image:  url('./images/background-2.jpg');
     background-repeat: no-repeat;        
     position: relative;        
     width: 100%;            
@@ -16,7 +18,7 @@
 
   .add-some-margin-2 {
     margin-top: 20px;
-}
+}y
 
   .container2 {
     align-items: center;

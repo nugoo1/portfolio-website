@@ -19,6 +19,7 @@ import expensifyImage from "../images/expensify-img.png";
 import sarrademImage from "../images/sarradem-img.png";
 import marinaImage from "../images/marina-img.png";
 import remoteDevs from "../images/remote_devs.JPG";
+import gundaPowerImage from "../images/gundapower.jpg";
 
 
 
@@ -51,12 +52,21 @@ const MyWork = () => (
       </div>
 
       <div>
+      <Card className="card-work-6">
+        <CardImg className="card__image" top src={gundaPowerImage} alt="Gunda Power" />
+        <CardBody>
+          <CardTitle className="card__title">Gunda Power</CardTitle>
+          <CardSubtitle className="card__subtitle">Web Design & Development</CardSubtitle>
+          <CardText className="card__text">Static website powered by React.js and Gatsby</CardText>
+          <a href="https://www.gundapower.com/" target="blank"><Button className="card__button-4">View Demo</Button></a>
+        </CardBody>
+      </Card>
         <Card className="card-work-5">
           <CardImg className="card__image" top src={remoteDevs} alt="Remote Devs" />
           <CardBody>
             <CardTitle className="card__title">Hobby Project</CardTitle>
             <CardSubtitle className="card__subtitle">Remote Devs</CardSubtitle>
-            <CardText className="card__text">This is a web application I started building with React.js, let me know what you think!</CardText>
+            <CardText className="card__text">This is a web application I started building with React.js, it's still very much a work in progress!</CardText>
             <a href="https://trusting-easley-126adb.netlify.com/" target="blank"><Button className="card__button-2">View Demo</Button></a>
           </CardBody>
         </Card>

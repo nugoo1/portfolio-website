@@ -288,7 +288,7 @@ div {
 }
 
 .bg-stripe {
-    background-image: url(./images/stripe.jpg);
+    background-image: url("./images/stripe.jpg");
     background-size: 3px auto;
     background-position: center center;
     background-repeat: repeat-x;

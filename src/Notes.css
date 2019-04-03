@@ -29,7 +29,7 @@
     text-align: center;
 }
 
-.card-work-4 {
+.card-work-4, .card-work-6 {
     align-items:center;
     border: none;
     background-color: #28c14b;
