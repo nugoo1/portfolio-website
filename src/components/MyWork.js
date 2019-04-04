@@ -52,18 +52,20 @@ const MyWork = () => (
           </h2>
           <h3 className="section-title-work"> Welcome</h3>
           <p className="subtitle">
-            You'll find some of the recent work I've done below. Let me know what you think.
+            You'll find some of the recent work I've done below. Let me know
+            what you think.
           </p>
         </div>
       </div>
 
       <div className="workCards">
-      <Card className="card-work-7">
+        <Card className="card-work-7">
           <CardImg
             className="card__image"
             top
             src={reactGameImage}
             alt="Corporate Website"
+            style={{ maxWidth: "80vw" }}
           />
           <CardBody>
             <CardTitle className="card__title">React Game</CardTitle>
@@ -114,24 +116,14 @@ const MyWork = () => (
               This is a web application I started building with React.js, it's
               still very much a work in progress!
             </CardText>
-            <div>
-              <a
-                href="https://optimistic-williams-304590.netlify.com/"
-                target="blank"
-              >
-                <Button className="card__button-2" style={{ margin: "0 20px" }}>
-                  View Demo
-                </Button>
-              </a>
-              <a
-                href="https://trusting-easley-126adb.netlify.com/"
-                target="blank"
-              >
-                <Button className="card__button-2" style={{ margin: "0 20px" }}>
-                  View Demo
-                </Button>
-              </a>
-            </div>
+            <a
+              href="https://optimistic-williams-304590.netlify.com/"
+              target="blank"
+            >
+              <Button className="card__button-2">
+                View Demo
+              </Button>
+            </a>
           </CardBody>
         </Card>
       </div>
