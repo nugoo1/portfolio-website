@@ -12,19 +12,19 @@ export default function Skills() {
       <h5>I try to keep up-to-date with the latest technologies and releases.</h5>
       <p>For data storage I usually use MongoDB or Firebase.</p>
       <div className="skills">
-        <div>
+        <div className="skills__item">
           <img src={reactImage} />
           <h4>React.js</h4>
         </div>
-        <div>
+        <div className="skills__item">
           <img src={nodeJsImage} />
           <h4>Node Js</h4>
         </div>
-        <div>
+        <div className="skills__item">
           <img src={reactImage} />
           <h4>React Native</h4>
         </div>
-        <div>
+        <div className="skills__item">
           <img src={graphqlImage} />
           <h4>Graph QL</h4>
         </div>

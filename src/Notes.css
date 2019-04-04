@@ -5,6 +5,10 @@
     vertical-align: middle;
 }
 
+.workCards {
+    color: #f7f7f7 !important;
+}
+
 .card-work {
     align-items:center;
     border: none;
@@ -21,7 +25,7 @@
     text-align: center;
 }
 
-.card-work-3 {
+.card-work-3, .card-work-7 {
     align-items:center;
     border: none;
     background-color: #D63F3F;

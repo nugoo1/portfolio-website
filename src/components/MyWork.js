@@ -20,6 +20,7 @@ import sarrademImage from "../images/sarradem-img.png";
 import marinaImage from "../images/marina-img.png";
 import remoteDevs from "../images/remote_devs.png";
 import gundaPowerImage from "../images/gundapower.png";
+import reactGameImage from "../images/react-game.png";
 
 const MyWork = () => (
   <div>
@@ -51,13 +52,32 @@ const MyWork = () => (
           </h2>
           <h3 className="section-title-work"> Welcome</h3>
           <p className="subtitle">
-            You'll find some of the recent work I've done below. Be patient with
-            the demos as they're hosted on free heroku servers!
+            You'll find some of the recent work I've done below. Let me know what you think.
           </p>
         </div>
       </div>
 
-      <div>
+      <div className="workCards">
+      <Card className="card-work-7">
+          <CardImg
+            className="card__image"
+            top
+            src={reactGameImage}
+            alt="Corporate Website"
+          />
+          <CardBody>
+            <CardTitle className="card__title">React Game</CardTitle>
+            <CardSubtitle className="card__subtitle">
+              Powered by React
+            </CardSubtitle>
+            <CardText className="card__text">
+              Working on a little game with React.js. A work in progres.
+            </CardText>
+            <a href="https://festive-kalam-a0cbdf.netlify.com/" target="blank">
+              <Button className="card__button-3">Play Demo</Button>
+            </a>
+          </CardBody>
+        </Card>
         <Card className="card-work-6">
           <CardImg
             className="card__image"
