@@ -143,8 +143,8 @@ const MyWork = () => (
               New Macau Casino
             </CardSubtitle>
             <CardText className="card__text">
-              This website is built with React.js and Gatsby, which makes it
-              optimized straight outta the box!
+              This website is built with React.js and Gatsby, a static site generator 
+              for react applications and provides a lot of optimization straight out of the box!
             </CardText>
             <a href="https://newmacaucasino.com/" target="blank">
               <Button className="card__button">View Demo</Button>
